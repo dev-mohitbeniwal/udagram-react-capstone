@@ -16,10 +16,6 @@ services:
     build:
       context: ./udagram-video-api
     image: udagram-video-api
-  frontend:
-    build:
-      context: ./udagram-frontend
-    image: udagram-frontend
   frontend_react:
     build:
       context: ./udagram-react-frontend
