@@ -19,6 +19,7 @@ script:
   - docker tag udagram-feed-api mohit7me/udagram-feed-api:latest
   - docker tag udagram-reverseproxy mohit7me/udagram-reverseproxy:latest
   - docker tag udagram-react-frontend mohit7me/udagram-react-frontend:latest
+  - docker tag udagram-video-api mohit7me/udagram-video-api:latest
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
@@ -26,3 +27,4 @@ after_success:
   - docker push mohit7me/udagram-feed-api:latest
   - docker push mohit7me/udagram-reverseproxy:latest
   - docker push mohit7me/udagram-react-frontend:latest
+  - docker push mohit7me/udagram-video-api:latest
