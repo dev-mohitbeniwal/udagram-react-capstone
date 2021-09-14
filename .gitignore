@@ -4,3 +4,4 @@ deployment
 udagram-frontend
 udagram-frontend-old
 udagram-monolith
+**.DS_Store
